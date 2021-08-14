@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Bebas+Neue" rel="stylesheet">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>greeting2</title>
+
+<style>
+
+        /*CSS RESETS*/
+
+body{
+
+    background-color: #fff;
+
+    line-height: 1.6;
+
+}
+
+h1 {
+
+    margin-top: 0;
+
+}
+
+/*CSS START*/
+
+.full-table {
+
+    display: table;
+
+    height: 100%;
+
+    width: 100%;
+
+}
+
+.table-cell {
+
+    display: table-cell;
+
+    vertical-align: middle;
+
+    text-align: center;
+
+}
+
+.card {
+
+			 margin: 0px    padding: 0px;
+
+    border: 0px;
+
+    background: #ae9274;
+
+    width: 100%;
+
+    color: #fff;
+
+    display: inline-block;
+
+    box-shadow: 2px 2px 1px 0px #808080;
+
+    border-radius: 10px;
+
+}
+
+.d {
+
+    display: inline;
+
+    min-width: 0x;
+
+    font-family: 'Bebas Neue', cursive;
+
+    font-size: 25px;
+
+    padding-right: 5px;
+
+}
+
+.n {
+
+			 display: inline;
+
+    min-width: 0px;
+
+    font-family: 'Bebas Neue', cursive;
+
+    font-size: 25px;
+
+    padding-right: 0px;
+
+}
+
+.m {
+
+				 display: inline;
+
+    min-width: 0px;
+
+    font-family: 'Bebas Neue', cursive;
+
+    font-size: 25px;
+
+    padding-right: 0px;
+
+}
+
+.greet{
+
+    margin:10px;
+
+    display:inline;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 30px;
+
+     padding-right: -50px;
+
+}
+
+    </style>
+
+</head>
+
+<body>
+
+<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:400,700" rel="stylesheet">
+
+<div class="full-table">
+
+<div class="table-cell">
+
+<div class="card">
+
+<div class="greet" id="greet"></div>
+
+<div class="d" id="d"></div>
+
+<div class="n" id="n"></div>
+
+<div class="m" id="m"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function date() {
+
+				var d = new Date();
+
+				var m = new Date();
+
+				var n = new Date();
+
+					dia = d.getDay();
+
+	    switch (dia){
+
+							 case 0: 
+
+							 d ="Domingo,";
+
+							 case 1:
+
+							 d ="Lunes,";
+
+							 case 2:
+
+							 d ="Martes,";
+
+							 case 3:
+
+							 d="Miércoles,";
+
+							 case 4:
+
+							 d ="Jueves,";
+
+							 case 5:
+
+							 d ="Viernes,";
+
+							 case 6:
+
+							 d ="Sábado,";
+
+		     }
+
+			  	
+
+			  	n =n.getDate() + " de ";
+
+			
+
+					mes= m.getMonth();
+
+					switch(mes){
+
+					  case 0:
+
+							 m ='Enero';
+
+							case 1:
+
+							 m ='Febrero';
+
+							case 2:
+
+							 m ='Marzo';
+
+							case 3:
+
+							 m ='Abril';
+
+							case 4:
+
+							 m ='Mayo';
+
+							case 5:
+
+							 m = 'Junio';
+
+							caso 6:
+
+							 m = 'Julio';
+
+							caso 7:
+
+							 m = 'Agosto';
+
+							caso 8:
+
+							 m = 'Septiembre';
+
+							caso 9:
+
+							 m = 'Octubre';
+
+							caso 10:
+
+							 m = 'Noviembre';
+
+							caso 11:
+
+							 m = 'Diciembre';
+
+						}
+
+document.getElementById ('d'). innerHTML = d;
+
+document.getElementById ('m'). innerHTML = m;
+
+document.getElementById ('n'). innerHTML = n;
+
+}
+
+function clock () {
+
+				var d = nueva fecha ();
+
+				hrs = d.getHours ();
+
+								si (horas <12)
+
+        				saludar = 'Buenos días Adriana';
+
+    				si no (horas> = 12 && horas <21)
+
+        				saludar = 'Buenas tardes Adriana';
+
+    				más si (horas> = 21 && horas <5)
+
+        				saludar = 'Buenas noches Adriana';
+
+document.getElementById ('saludar'). innerHTML = saludar}
+
+function dateTime () {
+
+fecha()
+
+reloj()
+
+}
+
+fecha y hora()
+
+// FIN
+
+</script>
+
+</html>
